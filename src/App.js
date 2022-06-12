@@ -1,12 +1,11 @@
 import Header from "./components/Header";
-import Section from "./components/Section";
-import logo from "./logo.svg";
+import Meme from "./components/Meme";
 
 function App() {
   return (
     <div>
       <Header />
-      <Section />
+      <Meme />
     </div>
   );
 }

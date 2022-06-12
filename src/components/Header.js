@@ -1,14 +1,14 @@
 import React from "react";
+import troll from "../assets/Troll Face.png";
 import classes from "./Header.module.css";
-import logo from "../assets/Fill 213.png";
-// console.log(logo);
 
 function Header() {
   return (
-    <div className={classes.header}>
-      <img src={logo} alt="logo" />
-      <h1>my travel journal.</h1>
-    </div>
+    <header className={classes.header}>
+      <img src={troll} alt="troll" className={classes["header--image"]} />
+      <h2 className={classes["header--title"]}>Meme Generator</h2>
+      <h4 className={classes["header--project"]}>React Course - Project 3</h4>
+    </header>
   );
 }
 

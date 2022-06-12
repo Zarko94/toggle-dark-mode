@@ -1,16 +1,21 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #f55a5a;
-  height: 55px;
-}
-.header h1 {
-  font-weight: 500;
-  font-size: 14.4608px;
-  line-height: 18px;
-  letter-spacing: -0.075em;
+  height: 65px;
+  color: white;
+  padding: 20px;
 
-  color: #ffffff;
-  padding-left: 7px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+}
+.header--image {
+  height: 100%;
+  margin-right: 6px;
+}
+.header--title {
+  font-size: 20px;
+  margin-right: auto;
+}
+.header--project {
+  font-size: 12px;
+  font-weight: 500;
 }
