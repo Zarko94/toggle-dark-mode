@@ -2,3 +2,18 @@ body {
   margin: 0;
   font-family: "Inter";
 }
+.imgHolder {
+  position: relative;
+}
+h5 {
+  position: absolute;
+  font-size: 30px;
+  color: aliceblue;
+  top: -45px;
+}
+h6 {
+  position: absolute;
+  font-size: 30px;
+  color: aliceblue;
+  bottom: -45px;
+}

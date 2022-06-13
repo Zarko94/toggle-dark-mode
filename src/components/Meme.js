@@ -30,6 +30,15 @@ function Meme() {
     getMeme();
   };
 
+  const handleTextChange = (event) => {
+    const { name, value } = event.target;
+    // console.log(event.target.value);
+    setMeme((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
   return (
     <main className={classes.main}>
       <form className={classes.form} onSubmit={generateMemeHandler}>
@@ -37,18 +46,28 @@ function Meme() {
           <input
             className={classes["form--input"]}
             type="text"
-            placeholder="Shut Up"
+            placeholder="Top text"
+            onChange={handleTextChange}
+            value={meme.topText}
+            name="topText"
           />
           <input
             className={classes["form--input"]}
             type="text"
-            placeholder="And take my money"
+            placeholder="Bottom text"
+            onChange={handleTextChange}
+            value={meme.bottomText}
+            name="bottomText"
           />
         </div>
         <button type="submit" className={classes["form--button"]}>
           Get a new meme image
         </button>
-        <img src={meme.randomImage} alt="jes" className={classes.img} />
+        <div className="imgHolder">
+          <img src={meme.randomImage} alt="jes" className={classes.img} />
+          <h5>{meme.topText}</h5>
+          <h6>{meme.bottomText}</h6>
+        </div>
       </form>
     </main>
   );
